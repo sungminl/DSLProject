@@ -1,0 +1,11 @@
+&a = 1
+
+LOOP &a FROM 1 - 1 TO log(0)
+{
+MATRIX
+ROW: 2, COL: 4(&a)
+{
+2 * &a|
+&a / 2|
+}
+}

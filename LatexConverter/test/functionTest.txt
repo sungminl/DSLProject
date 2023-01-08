@@ -1,0 +1,18 @@
+&a = 1
+&b = 99
+FUNCTION print_Text (&a, &b) {
+&c = [1, 2, 3]
+TEXT(Bold, Underline)
+{
+"print this"
+}
+MATRIX
+COL: 3, ROW: 3(&a,&b,&c)
+{
+&c|
+&a, 1, &b|
+&c * 3|
+}
+}
+
+CALL(print_Text, &a, &b)

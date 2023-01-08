@@ -1,0 +1,64 @@
+TABLE ROW:3,COL:2 TOPHEADER:("Description","Price") LEFTHEADER:("Corgi","Husky","Pug")
+{
+"cutie&fl_y","2000"|
+"{loud%red}","1800"|
+"smol$iv","2100"|
+}
+
+&a = 21
+MATRIX  ROW:9 , COL:9 (&a)
+{
+ &a
+}
+
+TEXT (Underline, Bold, Heading, Bold) {
+"i like potatoes and hummus"
+}
+
+GRAPH
+{
+NODES:
+{
+Node1, Node2, Node3
+},
+CONNECTIONS:
+{
+Node1 -> Node2, Node1 <-> (p) Node3
+}
+}
+
+GRAPH
+{
+NODES:
+{
+1 (SA), 2 (A), 3, 4
+},
+CONNECTIONS:
+{
+1 -> (F) 2, 2 -> (O) 3, 3 -> (O) 4, 4 -> (D) 1
+}
+}
+
+&b = [1, 2, cos(3), 4, 5]
+MATRIX  ROW:4, COL:5 (&b)
+{
+  x - &b |
+  x - (2 * &b) |
+  x - (3 * &b) |
+  x - (4 * &b) |
+}
+
+MATRIX ROW: 5, COL: 6 (&b)
+{
+  5 * &b, x|
+}
+&x = [3 + 5, sin( 8 ^ 2 ), cos(9)]
+&y = [1, 2, log(sin(3))]
+LOOP &i FROM 0 TO 2 {
+MATRIX ROW: 3, COL: 3 (&y, &x)
+{
+1 - &x |
+&y |
+&i, 2*&i, 3*&i |
+}
+}

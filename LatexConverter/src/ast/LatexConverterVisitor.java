@@ -1,0 +1,41 @@
+package ast;
+
+public interface LatexConverterVisitor<T, U> {
+    U visit(Add a, T t);
+    U visit(LeftHeader c, T t);
+    U visit(Comment c, T t);
+    U visit(Connection c, T t);
+    U visit(Cos c, T t);
+    U visit(Division d, T t);
+    U visit(Equation e, T t);
+    U visit(FunctionCall f, T t);
+    U visit(FunctionDefinition f, T t);
+    U visit(Graph g, T t);
+    U visit(GraphNode g, T t);
+    U visit(Log l, T t);
+    U visit(Loop l, T t);
+    U visit(Matrix m, T t);
+    U visit(MatrixContent m, T t);
+    U visit(MatRow m, T t);
+    U visit(Multiplication m, T t);
+    U visit(MutableVariable m, T t);
+    U visit(MVAssignment m, T t);
+    U visit(Num n, T t);
+    U visit(NumArray n, T t);
+    U visit(Parameters p, T t);
+    U visit(Power p, T t);
+    U visit(Program p, T t);
+    U visit(QuotedText q, T t);
+    U visit(Row r, T t);
+    U visit(RowContent r, T t);
+    U visit(TopHeader r, T t);
+    U visit(Sin s, T t);
+    U visit(Sqrt s, T t);
+    U visit(Subtraction s, T t);
+    U visit(Symbol s, T t);
+    U visit(Table table, T t);
+    U visit(Tan tan, T t);
+    U visit(TextArray ta, T t);
+    U visit(TextEntry te, T t);
+    U visit(TextStyleSettings tss, T t);
+}

@@ -1,0 +1,33 @@
+TEXT(Bold, Heading, Underline, Italics){"abcdefg this is my text entry"}
+&a = 3.4
+&x = a + 42
+&b = "abc"
+&c = [1, 2, 3]
+&d = ["a", "b", "c"]
+
+GRAPH{
+NODES:{Node1(S), Node2(A)},
+CONNECTIONS:{Node1->(text)Node2}
+}
+
+TABLE 
+ROW:3,COL:3
+TOPHEADER: ("T1", "T2", "T3")
+LEFTHEADER: ("L1", "L2", "L3")
+{
+"a", &b, "c"|
+"a", "b", "c"|
+"a", "b", "c"|
+}
+
+MATRIX 
+ROW:3,COL:3 (&a)
+{
+2, 2.54, -5|
+&a, &a + 1, 5|
+5 ^ (42 + x), log(5), a * 2|
+}
+
+/* this is the text inside the 
+commented code
+*/

@@ -1,0 +1,4 @@
+GRAPH{
+NODES:{Node1, Node2},
+CONNECTIONS:{Node1->Node2, Node1->POTATO}
+}

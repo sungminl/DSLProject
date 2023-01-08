@@ -1,0 +1,10 @@
+LatexConverter/.idea/workspace.xml
+LatexConverter/src/parser/gen/
+LatexConverter/gen/
+LatexConverter/out/
+LatexConverter/output.txt
+LatexConverter/output.tex
+LatexConverter/test/output/*.tex
+LatexConverter/*.pdf
+*.aux
+*.log

@@ -1,0 +1,9 @@
+TABLE
+TOPHEADER: ("T1", "T2", "T3")
+LEFTHEADER: ("L1", "L2", "L3")
+ROW:3, COL:3
+{
+"a", "b", "c"|
+"a", "b", "c"|
+"a", "b", "c"|
+}
